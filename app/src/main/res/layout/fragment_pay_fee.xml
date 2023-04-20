@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PayFeeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/payFeeLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/gradient"
+            android:paddingVertical="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/backBtnPayFee"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_arrow_left"
+                android:backgroundTint="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Pay Fee"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/payFeeLinearLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/studentNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student name: Saumya Gupta"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:textSize="17sp"
+                android:layout_margin="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/studentClassTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student class: 10U"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:textSize="17sp"
+                android:layout_marginHorizontal="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/studentNameTextView"/>
+
+
+            <TextView
+                android:id="@+id/selectMonthTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Select month(s):"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/studentClassTextView" />
+
+            <CheckBox
+                android:id="@+id/aprilCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selectMonthTV"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/montserrat"
+                android:text="April"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/selectMonthTV" />
+
+            <CheckBox
+                android:id="@+id/mayCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/montserrat"
+                android:text="May"
+                android:textSize="17sp"
+                app:layout_constraintStart_toEndOf="@+id/aprilCheckbox"
+                app:layout_constraintTop_toBottomOf="@+id/selectMonthTV" />
+
+            <CheckBox
+                android:id="@+id/juneCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/montserrat"
+                android:text="June"
+                android:textSize="17sp"
+                app:layout_constraintStart_toEndOf="@+id/mayCheckbox"
+                app:layout_constraintTop_toBottomOf="@+id/selectMonthTV" />
+
+            <CheckBox
+                android:id="@+id/julyCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/montserrat"
+                android:text="July"
+                android:textSize="17sp"
+                app:layout_constraintStart_toEndOf="@+id/juneCheckbox"
+                app:layout_constraintTop_toBottomOf="@+id/selectMonthTV" />
+
+            <CheckBox
+                android:id="@+id/augustCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/montserrat"
+                android:text="August"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aprilCheckbox" />
+
+            <CheckBox
+                android:id="@+id/septemberCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/montserrat"
+                android:text="September"
+                android:textSize="17sp"
+                app:layout_constraintStart_toEndOf="@+id/augustCheckbox"
+                app:layout_constraintTop_toBottomOf="@+id/mayCheckbox" />
+
+            <CheckBox
+                android:id="@+id/octoberCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/montserrat"
+                android:text="October"
+                android:textSize="17sp"
+                app:layout_constraintStart_toEndOf="@+id/septemberCheckbox"
+                app:layout_constraintTop_toBottomOf="@+id/juneCheckbox" />
+
+            <CheckBox
+                android:id="@+id/novemberCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/montserrat"
+                android:text="November"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/augustCheckbox" />
+
+            <CheckBox
+                android:id="@+id/decemberCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/montserrat"
+                android:text="December"
+                android:textSize="17sp"
+                app:layout_constraintStart_toEndOf="@+id/novemberCheckbox"
+                app:layout_constraintTop_toBottomOf="@+id/septemberCheckbox" />
+
+            <CheckBox
+                android:id="@+id/januaryCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/montserrat"
+                android:text="January"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/novemberCheckbox" />
+
+            <CheckBox
+                android:id="@+id/februaryCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/montserrat"
+                android:text="February"
+                android:textSize="17sp"
+                app:layout_constraintStart_toEndOf="@+id/januaryCheckbox"
+                app:layout_constraintTop_toBottomOf="@+id/decemberCheckbox" />
+
+            <CheckBox
+                android:id="@+id/marchCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/montserrat"
+                android:text="March"
+                android:textSize="17sp"
+                app:layout_constraintStart_toEndOf="@+id/februaryCheckbox"
+                app:layout_constraintTop_toBottomOf="@+id/decemberCheckbox" />
+
+
+            <TextView
+                android:id="@+id/tuitionFeeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Tuition Fee: --"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/januaryCheckbox" />
+
+            <TextView
+                android:id="@+id/developmentTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Development Fund: --"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tuitionFeeTextView" />
+
+            <TextView
+                android:id="@+id/miscTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Miscellaneous Fee: --"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/developmentTextView" />
+
+            <TextView
+                android:id="@+id/annualTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Annual Fee: --"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/miscTextView" />
+
+            <TextView
+                android:id="@+id/insuranceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Insurance: --"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/annualTextView" />
+
+            <TextView
+                android:id="@+id/totalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Total: 0.00"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/insuranceTextView" />
+
+            <android.widget.Button
+                android:id="@+id/payWithPaypalBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay with Paypal"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat"
+                android:background="@drawable/rounded_corners_filled_bg"
+                android:backgroundTint="@color/primaryDark"
+                android:layout_marginTop="40dp"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="60dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/totalTextView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>
