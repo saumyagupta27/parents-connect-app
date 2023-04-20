@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Parents Connect</string>
+    <string name="welcome_heading">Welcome to Parents Connect</string>
+    <string name="welcome_tagline">Connecting parents to their</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="login_subtitle">Please login to continue</string>
+    <string name="signup_subtitle">Create an account to continue</string>
+    <string name="email_or_username">Email or username</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="dont_have_account">
+        I don\'t have an account. <font color="#5C359C"><b>Sign Up</b></font>
+    </string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="delete">Delete</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout">LOGOUT</string>
+</resources>
